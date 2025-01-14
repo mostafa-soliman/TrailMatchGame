@@ -163,8 +163,8 @@ class MatchingFragment : Fragment() {
     }
 
     private fun getLetterImage(position: Int, letter: String) {
-        val path = AppUtils.getAlphabetConnectPath(letter)
-        val bm = AppUtils.getBitmapByAssetName(path, requireContext())
+//        val path = AppUtils.getAlphabetConnectPath(letter)
+//        val bm = AppUtils.getBitmapByAssetName(path, requireContext())
 
         val resId = when(letter) {
             "A" -> R.drawable.a
@@ -189,8 +189,8 @@ class MatchingFragment : Fragment() {
     }
 
     private fun getPicImage(position: Int, letter: String) {
-        val path = AppUtils.getAlphabetObjectPath(letter)
-        val bm = AppUtils.getBitmapByAssetName(path, requireContext())
+//        val path = AppUtils.getAlphabetObjectPath(letter)
+//        val bm = AppUtils.getBitmapByAssetName(path, requireContext())
 
         val resId = when(letter) {
             "A" -> R.drawable.a_ballon

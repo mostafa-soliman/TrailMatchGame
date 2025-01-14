@@ -4,19 +4,19 @@ package com.example.matchingactiviy
 
 object Constant {
 
-    const val DATA ="Data"
-    const val LETTERS ="LETTERS"
-    const val LETTER_POSITION ="LETTERS_POSITION"
-    const val CAPITALLATTER="CapitalLatter/"
-    const val ALPHABATESBALLOON="AlphabatesBalloon/"
-    const val ALPHABETCONNECT="ConnectLetter/"
-    const val ALPHABETCOBJECT="AlphabetObject/"
-
-    fun getLetterPath(letter:String) = "letter/" + letter + "_bg.png"
-
-
-    const val adUnitId = "ca-app-pub-3940256099942544/1033173712"
-    const val adShowIntervalMillis = 30000L // 1 minute interval
+//    const val DATA ="Data"
+//    const val LETTERS ="LETTERS"
+//    const val LETTER_POSITION ="LETTERS_POSITION"
+//    const val CAPITALLATTER="CapitalLatter/"
+//    const val ALPHABATESBALLOON="AlphabatesBalloon/"
+//    const val ALPHABETCONNECT="ConnectLetter/"
+//    const val ALPHABETCOBJECT="AlphabetObject/"
+//
+//    fun getLetterPath(letter:String) = "letter/" + letter + "_bg.png"
+//
+//
+//    const val adUnitId = "ca-app-pub-3940256099942544/1033173712"
+//    const val adShowIntervalMillis = 30000L // 1 minute interval
 
     val LettersList=  listOf<String>(
         LetterFactory.A,

@@ -4,12 +4,12 @@ import androidx.annotation.StringDef
 
 
 class LetterFactory {
-    val letterAssets: String
-        get() = "letter/" + letter + "_bg.png"
-    val tracingAssets: String
-        get() = "trace/" + letter + "_tracing.png"
-    val strokeAssets: String
-        get() = "strokes/" + letter + "_PointsInfo.json"
+//    val letterAssets: String
+//        get() = "letter/" + letter + "_bg.png"
+//    val tracingAssets: String
+//        get() = "trace/" + letter + "_tracing.png"
+//    val strokeAssets: String
+//        get() = "strokes/" + letter + "_PointsInfo.json"
 
     @StringDef(*[A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z])
     @Retention(
