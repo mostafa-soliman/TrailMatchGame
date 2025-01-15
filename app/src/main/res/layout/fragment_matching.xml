@@ -9,118 +9,230 @@
 
     <com.example.matchingactiviy.LineView
         android:id="@+id/lineview"
-        android:elevation="2dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:elevation="2dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-    <TextView
-        android:id="@+id/text1"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:background="@drawable/green_borders"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/text2"
-        app:layout_constraintEnd_toStartOf="@+id/meaning1"
-        app:layout_constraintHorizontal_bias="0.5"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/text2"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:background="@drawable/green_borders"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/text3"
-        app:layout_constraintEnd_toEndOf="@+id/text1"
-        app:layout_constraintStart_toStartOf="@+id/text1"
-        app:layout_constraintTop_toBottomOf="@+id/text1" />
 
-    <TextView
-        android:id="@+id/text3"
-        android:layout_width="120dp"
-        android:layout_height="60dp"
-        android:background="@drawable/green_borders"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/text2"
-        app:layout_constraintStart_toStartOf="@+id/text2"
-        app:layout_constraintTop_toBottomOf="@+id/text2" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/meaning1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/meaning1" />
 
-    <TextView
-        android:id="@+id/meaning1"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:background="@drawable/green_borders"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/meaning2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/text1"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/meaning2"
+            app:layout_constraintEnd_toEndOf="@+id/text1"
+            app:layout_constraintStart_toStartOf="@+id/text1"
+            app:layout_constraintTop_toTopOf="@+id/meaning2" />
 
-    <TextView
-        android:id="@+id/meaning2"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:background="@drawable/green_borders"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/meaning3"
-        app:layout_constraintEnd_toEndOf="@+id/meaning1"
-        app:layout_constraintStart_toStartOf="@+id/meaning1"
-        app:layout_constraintTop_toBottomOf="@+id/meaning1" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/meaning3"
+            app:layout_constraintEnd_toEndOf="@+id/text2"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/text2"
+            app:layout_constraintTop_toTopOf="@+id/meaning3"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/meaning3"
-        android:layout_width="150dp"
-        android:layout_height="70dp"
-        android:background="@drawable/green_borders"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/meaning2"
-        app:layout_constraintTop_toBottomOf="@+id/meaning2" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/meaning4"
+            app:layout_constraintEnd_toEndOf="@+id/text3"
+            app:layout_constraintStart_toStartOf="@+id/text3"
+            app:layout_constraintTop_toTopOf="@+id/meaning4" />
 
-    <ImageView
-        android:id="@+id/imgNext"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_margin="10dp"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/next" />
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/meaning5"
+            app:layout_constraintEnd_toEndOf="@+id/text4"
+            app:layout_constraintStart_toStartOf="@+id/text4"
+            app:layout_constraintTop_toTopOf="@+id/meaning5" />
 
-    <ImageView
-        android:id="@+id/imgClose"
-        android:layout_width="29dp"
-        android:layout_height="24dp"
-        android:layout_margin="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/close_blue" />
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/meaning6"
+            app:layout_constraintEnd_toEndOf="@+id/text5"
+            app:layout_constraintStart_toStartOf="@+id/text5"
+            app:layout_constraintTop_toTopOf="@+id/meaning6" />
+
+        <TextView
+            android:id="@+id/meaning1"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/meaning2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/meaning2"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/meaning3"
+            app:layout_constraintEnd_toEndOf="@+id/meaning1"
+            app:layout_constraintStart_toStartOf="@+id/meaning1"
+            app:layout_constraintTop_toBottomOf="@+id/meaning1" />
+
+        <TextView
+            android:id="@+id/meaning3"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/meaning4"
+            app:layout_constraintStart_toStartOf="@+id/meaning2"
+            app:layout_constraintTop_toBottomOf="@+id/meaning2" />
+
+        <!-- النصوص الإضافية للمعاني -->
+        <TextView
+            android:id="@+id/meaning4"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/meaning5"
+            app:layout_constraintEnd_toEndOf="@+id/meaning3"
+            app:layout_constraintStart_toStartOf="@+id/meaning3"
+            app:layout_constraintTop_toBottomOf="@+id/meaning3" />
+
+        <TextView
+            android:id="@+id/meaning5"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/meaning6"
+            app:layout_constraintEnd_toEndOf="@+id/meaning4"
+            app:layout_constraintStart_toStartOf="@+id/meaning4"
+            app:layout_constraintTop_toBottomOf="@+id/meaning4" />
+
+        <TextView
+            android:id="@+id/meaning6"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+
+            android:background="@drawable/green_borders"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/meaning5"
+            app:layout_constraintStart_toStartOf="@+id/meaning5"
+            app:layout_constraintTop_toBottomOf="@+id/meaning5" />
+
+        <ImageView
+            android:id="@+id/imgNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/next" />
+
+        <ImageView
+            android:id="@+id/imgClose"
+            android:layout_width="29dp"
+            android:layout_height="24dp"
+            android:layout_margin="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/close_blue" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
