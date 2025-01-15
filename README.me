@@ -1,0 +1,82 @@
+# Matching Game Application
+
+This repository contains an Android application that implements a matching game. Users can pair words with their corresponding meanings through an interactive interface. The application is built using Kotlin and Android's View Binding for efficient UI management.
+
+## Screenshots
+
+<p float="left">
+  <img src="https://drive.google.com/uc?id=1_EsccgmHXYG1kEMiKzh1JhnoXhkXnAw6" width="45%" />
+  <img src="https://drive.google.com/uc?id=177eclg_SwRHlEZX2l366Br5Tni-t7gv7" width="45%" />
+</p>
+## Features
+- **Interactive Matching**: Allows users to pair items by drawing lines between words and their meanings.
+- **Text Views**: Displays a predefined list of words and meanings.
+- **Custom View**: Includes a `LineView` to visually connect matched pairs.
+- **Dynamic Content**: Supports a large dataset of word-meaning pairs, chunked for smooth performance.
+- **Animations**: Implements animations for better user experience.
+
+## File Structure
+
+### XML Layout (`res/layout`)
+
+- **`fragment_matching.xml`**: Defines the UI components, including `TextView`s for words and meanings, and `ImageView`s for navigation.
+- **Custom Drawable Resources**:
+  - `green_borders.xml`: Background style for text views.
+  - `selection_screen_bg.xml`: Background for the main screen.
+
+### Kotlin Code (`src/main/java`)
+
+- **`MatchingFragment.kt`**:
+  - Handles the logic for matching words with meanings.
+  - Manages the `LineView` to draw lines between items.
+  - Includes a predefined list of `wordMeaningPairs`.
+
+## How to Run
+
+1. Clone this repository.
+   ```bash
+   git clone https://github.com/mostafa-soliman/TrailMatchGame.git
+   ```
+2. Open the project in Android Studio.
+3. Build the project to download dependencies.
+4. Run the application on an emulator or a physical Android device.
+
+## Key Components
+
+### `MatchingFragment`
+
+- **UI Initialization**: Uses View Binding to link XML components to Kotlin code.
+- **Matching Logic**: Tracks user input to match items correctly.
+- **Dataset**: Contains a hardcoded list of word-meaning pairs, divided into chunks for optimized display.
+
+### Custom View: `LineView`
+
+- Extends `View` to handle custom drawing of lines between matched items.
+
+## Future Improvements
+
+- Add support for different languages.
+- Implement scoring and leaderboards.
+- Include additional levels and themes.
+- Enable voice-over for accessibility.
+
+## Contributions
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch.
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For questions or support, please contact Mostafa Fadali at m.fadaly52@gmail.com.
