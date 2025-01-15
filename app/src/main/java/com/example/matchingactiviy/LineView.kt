@@ -15,9 +15,9 @@ class LineView (context: Context, attrs: AttributeSet) : View(context, attrs) {
     var lineList = mutableListOf<LineList>()
     init {
         paint.apply {
-            color = Color.RED
+            color = Color.BLUE
             style = Paint.Style.STROKE
-            strokeWidth = 5f
+            strokeWidth = 8f
             isAntiAlias = true
         }
     }
